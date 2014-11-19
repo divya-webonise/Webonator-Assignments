@@ -1,0 +1,15 @@
+ 1)sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+[sudo] password for webonise: 
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homed
+
+2)echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
+
+3)sudo apt-get update
+
+4)sudo apt-get install -y mongodb-org
+
+5)sudo service mongod start
+
+6)use mydb
+switched to db mydb

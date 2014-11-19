@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="rgbcolor.js"></script>
+</head>
+<body>
+
+<div class="gridCellColor" style="margin-left:450px;margin-top:50px;">
+<input type="radio" value="R" name="cellColor" id="redCell">Red
+<input type="radio" value="G" name="cellColor" id="greenCell">Green
+<input type="radio" value="B" name="cellColor" id="blueCell">Blue
+</div>
+
+<div class="grid">
+    <div id="row11" class="gridCell"></div>
+    <div id="row12" class="gridCell"></div>
+    <div id="row13" class="gridCell"></div>
+    <div id="row21" class="gridCell"></div>
+    <div id="row22" class="gridCell"></div>
+    <div id="row23" class="gridCell"></div>
+    <div id="row31" class="gridCell"></div>
+    <div id="row32" class="gridCell"></div>
+    <div id="row33" class="gridCell"></div>
+</div>
+<input type="button" name="Shuffle" id="shuffle" value="Shuffle" style="margin-top:20px;margin-left:450px;"/>
+<input type="button" name="reset" id="reset" value="Reset" style="margin-top:20px;margin-left:50px;" onclick="resetAllCell()"/>
+<style>
+.grid {
+    width: 330px;
+    height: 330px;
+    background-color:#eee;
+	margin-left:450px;
+	margin-top:50px;
+	clear:both;
+}
+
+.grid div {
+    width: 100px;
+    height: 100px;
+    margin:5px;
+    outline: 1px solid #ccc;
+    float: left;
+    background-color:#ccc;
+	color:#000;
+    
+}
+.gridCell{
+text-align:center;
+font-size:70px;
+}
+
+.gridCell:hover{
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+border:1px dotted rgb(0,0,0);
+}
+</style>
+
+<script>
+
+
+	$('.gridCell').click(function(){
+	  if ( ! $("input").is(':checked') ){
+		alert("Please select color first");
+	  }else{
+		var color=$("input[name=cellColor]:checked").val();
+		var existColor=$(this).css("background-color");
+		var rgbColor= new RGBColor(existColor);
+		if(rgbColor.r == 255 && color === 'R'){
+			alert("Already Applied RED Color");
+		}
+		else if(rgbColor.b == 255 && color === 'B'){
+			alert("Already Applied Blue Color");
+		}
+		else if(rgbColor.g == 128 && color === 'G'){
+			alert("Already Applied GREEN Color");
+		}
+		else if(color === 'R'){
+			$(this).css("background-color","red");
+			alert("you have selected RED color");
+		}
+		else if(color === 'G'){
+			$(this).css("background-color","green");
+			alert("you have selected GREEN color");
+		}
+		else if(color === 'B'){
+			$(this).css("background-color","blue");
+			alert("you have selected BLUE color");
+		}
+	  }
+	});
+</script>
+
+<script>
+function resetAllCell(){
+	$("#row11").css("background-color","#ccc");
+	$("#row12").css("background-color","#ccc");
+	$("#row13").css("background-color","#ccc");
+	$("#row21").css("background-color","#ccc");
+	$("#row22").css("background-color","#ccc");
+	$("#row23").css("background-color","#ccc");
+	$("#row31").css("background-color","#ccc");
+	$("#row32").css("background-color","#ccc");
+	$("#row33").css("background-color","#ccc");
+}
+</script>
+
+<script>
+function checkMe(){
+emptyDivs();
+var uniqueRandoms = [];
+var numRandoms = 9;
+function emptyDivs()
+{
+	$("#row11").empty();
+	$("#row12").empty();
+	$("#row13").empty();
+	$("#row21").empty();
+	$("#row22").empty();
+	$("#row23").empty();
+	$("#row31").empty();
+	$("#row32").empty();
+	$("#row33").empty();
+}
+function makeUniqueRandom() {
+	
+	//uniqueRandoms.flush();
+    // refill the array if needed
+    if (!uniqueRandoms.length) {
+        for (var i =1; i <= numRandoms; i++) {
+            uniqueRandoms.push(i);
+        }
+    }
+    var index = Math.floor(Math.random() * uniqueRandoms.length);
+    var val = uniqueRandoms[index];
+
+    // now remove that value from the array
+    uniqueRandoms.splice(index, 1);
+
+    return val;
+
+}
+
+for (var i = 0; i < 9; i++) {
+    var rand = makeUniqueRandom();
+    //if (i % numRandoms === 0) {
+      //  $("#results").append("----<br>");
+    //}
+	if(i==0){
+    $("#row11").append(rand);}
+	else if(i==1){
+	$("#row12").append(rand);}
+	else if(i==2){
+	$("#row13").append(rand);}
+	else if(i==3){
+	$("#row21").append(rand);}
+	else if(i==4){
+	$("#row22").append(rand);}
+	else if(i==5){
+	$("#row23").append(rand);}
+	else if(i==6){
+	$("#row31").append(rand);}
+	else if(i==7){
+	$("#row32").append(rand);}
+	else if(i==8){
+	$("#row33").append(rand);}
+}
+
+}
+</script>
+
+<script>
+$(document).ready(function(){
+	checkMe();
+	$("#shuffle").click(function(){
+ 	checkMe();
+ });
+ });
+
+</script>
+</body>
+</html>

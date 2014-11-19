@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+graph design
+</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<script src="graph.js">
+</script>
+
+
+<body>
+<div id="upleft">
+<form name="myForm"  onsubmit="#" method="post">
+Equation:<br>
+<input type="text" name="Equation" size="14" id="Equation" >
+<br>
+Step:<br>
+<input type="text" name="Step" size="14" id="Step">
+<br>
+Inbound:<br>
+<input type="text" name="Inbound" size="14" id="Inbound">
+<br>
+Outbound:<br>
+<input type="text" name="Outbound" size="14" id="Outbound">
+<br><br>
+<div class="center">
+<button type="button" onclick="validateForm()" >Draw!</button>
+</div>
+</form>
+</div>
+<div id="upright"></div>
+<canvas id="myCanvas" width="500" height="400" background-color:"LightGoldenRodYellow" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "red";
+ctx.fill();
+
+ctx.beginPath();              
+ctx.lineWidth = "2";
+ctx.strokeStyle = "black";  // black path
+ctx.moveTo(0, 170);
+ctx.lineTo(500, 170);
+ctx.stroke();  // Draw it
+
+ctx.beginPath();
+ctx.strokeStyle = "black";  // black path
+ctx.moveTo(250, 0);
+ctx.lineTo(250, 500);            
+ctx.stroke();  // Draw i
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
+

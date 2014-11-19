@@ -1,0 +1,143 @@
+----------------///insertion//----------
+
+> db.users.insert({id:"101",name:"Divya",email:"dvsharma129@gmail.com",password:"1234",is_admin:"0",given_assessment:{id:"201",question_id:"1",content:"Who is father of geometry?",option_id:"10",user_answer:"1"}})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({id:"101",name:"Tanvi",email:"tanvi129@gmail.com",password:"25674",is_admin:"0",given_assessment:{id:"202",question_id:"2",content:"Who is iron man of india?",option_id:"20",user_answer:"2"}})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({id:"103",name:"ansh",email:"anshu129@gmail.com",password:"256456",is_admin:"0",given_assessment:{id:"203",question_id:"3",content:"Who wrote-"the sky"?",option_id:"20",user_answer:"3"}})
+2014-11-15T19:07:14.517+0530 SyntaxError: Unexpected identifier
+> db.users.insert({id:"103",name:"ansh",email:"anshu129@gmail.com",password:"256456",is_admin:"0",given_assessment:{id:"203",question_id:"3",content:"Who wrote-the sky?",option_id:"20",user_answer:"3"}})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({id:"103",name:"rahul",email:"rahul789129@gmail.com",password:"2564245",is_admin:"0",given_assessment:{id:"204",question_id:"3",content:"Who wrote-the sky?",option_id:"10",user_answer:"4"}})
+WriteResult({ "nInserted" : 1 })
+
+--------------//update queries//-----------------------
+
+> >db.users.update({'id':'101'},{$set:{'id':'102'}})
+2014-11-15T19:14:48.177+0530 SyntaxError: Unexpected token >
+> db.users.update({'id':'101'},{$set:{'id':'102'}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.update({'id':'103'},{$set:{'id':'105'}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+--------------***result in formatted way******----------------
+
+> db.users.find().pretty)_;
+2014-11-15T19:15:42.305+0530 SyntaxError: Unexpected token )
+> db.users.find().pretty();
+{
+	"_id" : ObjectId("5467567acbc3623c1c052729"),
+	"id" : "102",
+	"name" : "Divya",
+	"email" : "dvsharma129@gmail.com",
+	"password" : "1234",
+	"is_admin" : "0",
+	"given_assessment" : {
+		"id" : "201",
+		"question_id" : "1",
+		"content" : "Who is father of geometry?",
+		"option_id" : "10",
+		"user_answer" : "1"
+	}
+}
+{
+	"_id" : ObjectId("546756cecbc3623c1c05272a"),
+	"id" : "101",
+	"name" : "Tanvi",
+	"email" : "tanvi129@gmail.com",
+	"password" : "25674",
+	"is_admin" : "0",
+	"given_assessment" : {
+		"id" : "202",
+		"question_id" : "2",
+		"content" : "Who is iron man of india?",
+		"option_id" : "20",
+		"user_answer" : "2"
+	}
+}
+{
+	"_id" : ObjectId("54675715cbc3623c1c05272b"),
+	"id" : "105",
+	"name" : "ansh",
+	"email" : "anshu129@gmail.com",
+	"password" : "256456",
+	"is_admin" : "0",
+	"given_assessment" : {
+		"id" : "203",
+		"question_id" : "3",
+		"content" : "Who wrote-the sky?",
+		"option_id" : "20",
+		"user_answer" : "3"
+	}
+}
+{
+	"_id" : ObjectId("5467578ecbc3623c1c05272c"),
+	"id" : "103",
+	"name" : "rahul",
+	"email" : "rahul789129@gmail.com",
+	"password" : "2564245",
+	"is_admin" : "0",
+	"given_assessment" : {
+		"id" : "204",
+		"question_id" : "3",
+		"content" : "Who wrote-the sky?",
+		"option_id" : "10",
+		"user_answer" : "4"
+	}
+}
+
+           -----****insertion*****-------
+
+>  db.users.insert({id:"21",name:"Science",duration:"1 hour",questions:{id:"1",content:"Who is father of geometry?"},options:{id:"41",option_content:"Euclid"}})
+
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({id:"22",name:"Books and authors",duration:"1 hour",questions:{id:"1",content:"Who is iron man of India?"},options:{id:"42",option_content:"keeplers"}})
+WriteResult({ "nInserted" : 1 })
+> db.assessments.find().pretty();
+> db.assessments.insert({id:"22",name:"Books and authors",duration:"1 hour",questions:{id:"1",content:"Who is iron man of India?"},options:{id:"42",option_content:"keeplers"}})
+WriteResult({ "nInserted" : 1 })
+> db.assessments.insert({id:"21",name:"personalities",duration:"1 hour",questions:{id:"2",content:"Who wrote-the sky?"},options:{id:"41",option_content:"Euclid"}})
+WriteResult({ "nInserted" : 1 })
+> db.assessments.find().pretty();
+{
+	"_id" : ObjectId("54675d8dcbc3623c1c05272f"),
+	"id" : "22",
+	"name" : "Books and authors",
+	"duration" : "1 hour",
+	"questions" : {
+		"id" : "1",
+		"content" : "Who is iron man of India?"
+	},
+	"options" : {
+		"id" : "42",
+		"option_content" : "keeplers"
+	}
+}
+{
+	"_id" : ObjectId("54675dbacbc3623c1c052730"),
+	"id" : "21",
+	"name" : "personalities",
+	"duration" : "1 hour",
+	"questions" : {
+		"id" : "2",
+		"content" : "Who wrote-the sky?"
+	},
+	"options" : {
+		"id" : "41",
+		"option_content" : "Euclid"
+	}
+}
+
+----------*** database creation ***-------------
+
+> use divya
+switched to db divya
+
+----------***Drop Database***-----------
+ db.dropDatabase();
+{ "dropped" : "divya", "ok" : 1 }
+------------****remove**------------------------------------
+> db.divya.remove()
+2014-11-18T12:51:17.784+0530 remove needs a query at src/mongo/shell/collection.js:299
+
+

@@ -1,0 +1,34 @@
+-------********Schema for "online Assessment" ******------------ 
+
+users={
+	"_id":int,
+	"name":String,
+	"email":String,
+	"password":String,
+	"is_admin":int,
+	"given_assessments":[{
+			"_id":int,
+			"question_id":int//* question_id=ObjectId 						(assessements.questions.id)*//,
+			"question_content":String,
+			"option_id":int,//*option_id=Object_id	(assessments.answers.id)*//
+			"Score_count":int,
+			"user_answer":int
+			
+}]
+
+}
+
+assessments=[{	"_id":int,
+		"name":String,
+		"duration":String,	
+		"questions":
+			[{	"_id":int,
+				"content":String,
+			}],
+
+		"options":
+			[{	"_id":int,
+				"option_content":String,
+			}]
+										
+}]

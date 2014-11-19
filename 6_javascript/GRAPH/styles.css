@@ -1,0 +1,36 @@
+#upleft { 
+   width:auto;
+   height:400px; 
+   background:white;
+   float:left; 
+   box-shadow: 10px 10px 5px #888888;
+   background-color:LightCoral ;
+    border-style: solid;
+    border-width: medium;
+	border-color:LightGray ;
+}
+
+#upright { 
+   width:300px; 
+   height:400px; 
+   background:white; 
+   float:left
+}
+.center
+{
+   margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+ 
+
+}
+  input:required:invalid, input:focus:invalid {
+    background-image: url(/images/invalid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  input:required:valid {
+    background-image: url(/images/valid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
