@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Rename a file"
+echo $( rename -v 's/^(.{0})/$1-new/' *.txt)
