@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo $(cp -a public_html public_html)

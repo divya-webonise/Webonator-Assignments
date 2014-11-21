@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo $(find -name x\* -type f)
+echo $(cp -a public_html public_html)
