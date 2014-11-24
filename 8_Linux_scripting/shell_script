@@ -1,13 +1,13 @@
 #!/bin/bash
  
-echo " The script starts now!"
-echo " the hostname of the system you are on :-"$(hostname)
-echo " The type and version of the operating system the machine machine is running:-"$(uname -a)
-echo " The full path to your home directory:-"$ ~
-echo "other users who are logged into the machine you are using:-"$(who)
-echo "other users who are logged into the machine you are using:-"$(finger)
-echo "what groups you belong to:-"$(groups)
-echo "what files (excluding directories) are located in your home directory and all its subdirectories:-"$(ls -R $HOME | grep -v ^d)
-echo "date and time"$(date)
+echo " The script starts now!" >> assignment.log
+echo " the hostname of the system you are on :-"$(hostname) >> assignment.log
+echo " The type and version of the operating system the machine machine is running:-"$(uname -a) >> assignment.log
+echo " The full path to your home directory:-"$ ~ >> assignment.log
+echo "other users who are logged into the machine you are using:-"$(who) >> assignment.log
+echo "other users who are logged into the machine you are using:-"$(finger) >> assignment.log
+echo "what groups you belong to:-"$(groups) >> assignment.log
+echo "what files (excluding directories) are located in your home directory and all its subdirectories:-"$(ls -R $HOME | grep -v ^d) >> assignment.log
+echo "date and time"$(date) >> assignment.log
 
 
