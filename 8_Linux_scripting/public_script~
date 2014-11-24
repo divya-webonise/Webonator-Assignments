@@ -1,8 +1,0 @@
-#!/bin/bash
-
-echo "public_html folder create"$(mkdir public_html)
-cd public_html
-echo "readme_file in public_html"$(touch readme.txt)
-
-
-
