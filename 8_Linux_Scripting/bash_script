@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -e " \n Date and Time"$(date) >> assignment.log
+echo -e " \n The script starts now!" >> assignment.log
+echo -e " \n The hostname of the system you are on :-"$(hostname) >> assignment.log
+echo -e " \n The type and version of the operating system the machine machine is running:-"$(uname -a) >> assignment.log
+echo -e " \n The full path to your home directory:-"$ ~ >> assignment.log
+echo -e " \n Other users who are logged into the machine you are using:-"$(who) >> assignment.log
+echo -e " \n what groups you belong to:-"$(groups) >> assignment.log
+shell_script=($(ls -R $HOME | grep -v ^d) )
+printf -- '%s\n' "${shell_script[@]}"'\n' >> assignment.log

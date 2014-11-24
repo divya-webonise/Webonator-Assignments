@@ -1,0 +1,2 @@
+A scripting language or script language is a programming language that supports scripts,programs written for some run time environment.
+A scripiting language can be viewed as a domain specif language

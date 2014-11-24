@@ -1,4 +1,0 @@
-#!/bin/bash
-
-echo "The bash script starts from here only:"
-echo $(rename -v 's/^(.{0})/$1-new/' *.txt)

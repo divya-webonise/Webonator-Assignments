@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo -e "\n creating public_html folder:"
+echo -e "\n public_html folder created"$(mkdir public_html)
+cd public_html
+echo -e "\n creating readme file: "
+echo -e "\n readme_file in public_html"$(touch readme.txt)
+cd ..
+
+
+echo -e "\n copy public_folder inside public_folder:"
+echo -e "\n"$(cp -a public_html public_html)
+cd public_html
+echo -e "\n"$(mv public_html 1_public_html)
+
+
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo  -e "\n Renaming all files starting with x:-"
+echo  -e "\n date and time"$(date) >> assignment.log
+echo  -e "\n to rename the all files whose name starts with letter x"$(rename -v 's/^/1_/' x*) >> assignment.log
+
+

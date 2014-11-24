@@ -1,0 +1,3 @@
+This is about demo of the shell_script
+The first and the foremost thing to do is to learn how to create and execute the shell script
+

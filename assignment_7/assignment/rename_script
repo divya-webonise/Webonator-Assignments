@@ -1,4 +1,0 @@
-#!/bin/bash
-
-echo"to rename the all files with extension .txt"$(rename -v 's/^(.{0})/$1-new/' *.txt)
-
