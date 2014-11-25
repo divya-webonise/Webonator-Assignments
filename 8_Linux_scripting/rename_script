@@ -1,8 +1,0 @@
-#!/bin/bash
- 
-echo "Renaming of file begins:">> assignment.log
-echo " to rename the all files with extension .txt"$(rename -v 's/^(.{2})/$1-new/' *.txt) >> assignment.log
-echo "to rename the all files whose name starts with letter x"$(rename -v 's/^/1_/' x*) >> assignment.log
-echo "date and time"$(date) >> assignment.log
-
-

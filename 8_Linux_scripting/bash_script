@@ -1,6 +1,0 @@
-#!/bin/bash
-
-echo "copy public_folder inside public_folder"
-echo $(cp -a public_html public_html)
-cd public_html
-echo $(mv public_html 1_public_html)
