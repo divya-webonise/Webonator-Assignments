@@ -1,0 +1,81 @@
+
+#container
+{
+ width: 940px;
+ margin: auto;
+}
+#header 
+{
+ background-color:#499bd7;
+ color:white;
+ text-align:center;
+ padding:5px;
+ height:176px;
+ font-size:30px;
+ font-family: Arial;
+}
+#nav 
+{
+ background-color:#eeeeee;
+ padding-left:80px;
+ font-family: Arial;
+ height:60px;
+ line-height:50px;
+}
+#banner
+{  
+ color:white;
+ font-size:30px;
+ font-family: Arial;
+ vertical-align:-76px;
+}
+#image
+{
+ width:207;
+ height:207;
+ float:left;
+ padding-top:29px;
+ padding-right:13px;
+ padding-left:80px;
+}
+#paragraph
+{
+ padding-left:80px;
+ margin:0;
+ padding-bottom:41px;
+ padding-right:80px;
+ }
+#section 
+{
+ width:940px;
+ font-size:14px;
+ font-family: Arial;
+ padding-top:14px;
+ padding-right:80px;
+}
+.footer 
+{
+ background-color:#eeeeee;
+ color:black;
+ font:12px ;
+ font-family: Arial;
+ height:65px;
+ line-height:60px;
+}
+#Categories
+{
+ float:left;
+ padding-left:80px;
+}
+#Copyright
+{
+ float:right;
+}
+
+
+
+
+
+
+
+
