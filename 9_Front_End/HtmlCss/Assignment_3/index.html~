@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> 
+	Website page design
+</title>
+<link href="Css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="navigation">
+			<div class="container">
+				<a class="logo" href="index.html" alt="Art_forth logo"></a>
+					<ul>
+						<li><a href="index.html">The gallery</a></li>
+						<li><a href="index.html">How it works</a></li>
+						<li><a href="index.html">Help</a></li>
+						<li class="clearBlock"></li>
+						
+					</ul>
+				<div class="clearBlock"></div>
+			</div>
+	</div>
+	<div id="Banner">
+		<div class="container">
+			<img src="images/header_image.png" alt="header image"/>
+			<div class="art_gallery">
+				<h1>Your Moods Change</h1>
+				<h2>so should the art on your walls!</h2>
+					<div class="view_gallery"><a href="#">view gallery</a></div>
+					<div class="join_now"><a href="#">join now</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div id ="content">
+		<div class="container">
+			<h3>HOW IT WORKS</h3>
+			<ul>
+				<li>
+					<div class="circle">
+					<img src="images/computer.png" alt="computer"/>
+					</div>
+					<p>Add art to your queue online</p>
+				</li>
+				<li>
+					<div class="circle">
+					<img src="images/Home.png" alt="computer"/>
+					</div>
+					<p>Receive art at your home in the manner you specify</p>	
+				</li>
+				<li>
+					<div class="circle">
+					<img src="images/message.png" alt="computer"/>
+					</div>	
+					<p>keep the art for as long as you like.Buy only what you love</p>
+				</li>
+				<li>	 
+					<div class="circle">
+					<img src="images/return.png" alt="computer"/>
+					</div>
+					<p>Return the art to receive next piece in your queue</p>
+				</li>
+				<li>
+					<div class="ClearBlock">	
+					 </div>
+				</li>
+				<li class="clearBlock"></li>
+						
+			</ul>	
+					<div class="ClearBlock"></div>
+		</div>
+	</div>
+	<div id = "footer">
+		<div class = "container">
+			
+			<ul>
+				<li id = "active_page"><a href="">HOME</a></li>
+				<li><a href="">THR GALLERY</a></li>
+				<li><a href="">HOW IT WORKS</a></li>
+				<li><a href="">HELP</a></li>
+				
+			</ul>
+			<ul class="social_media_option">	
+				<li><a href="#"><img src="images/google.png" alt="google plus"/></a></li>
+				<li><a href="#"><img src="images/pinterest.png" alt="pinterest"/></a></li>
+				<li><a href="#"><img src="images/twitter.png" alt="twitter"/></a></li>
+				<li><a href="#"><img src="images/facebook.png" alt="facebook"/></a></li>
+			</ul>
+			<div class="ClearBlock"></div>
+			<div class="copyRight">@2013 Art Forth All Rights Reserved</div>
+			
+				<ul class="menu">
+					<li><a href="index.html" alt ="Terms of service">Terms of service</a></li>
+					<li><a href="index.html" alt="Privacy policy">Privacy policy</a></li>
+					<li><a href="index.html" alt="Site map">Site map</a></li>
+					<li class="clearBlock"></li>
+				</ul>
+			<div class="ClearBlock"></div>
+		</div>
+	</div>
+			
+			
+
+				
+			
+		
+	
+
+</body>		
+</html>
+
