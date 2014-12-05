@@ -30,6 +30,7 @@ body
 {
 	background-color:#ffffff;
 	padding:25px 0px 10px 0px;
+	border-bottom:1px;
 	box-shadow:1px 2px 5px 0px #d9d9d9;
 }
 
@@ -70,7 +71,7 @@ body
 	
 }
 
-.clearBlock,.menu li.clearBlock, #navigation .container .clearBlock,#banner li.clearBlock,#content ul li.clearBlock,#footer .container .clearBlock
+.clearBlock,.menu li.clearBlock, #navigation .container .clearBlock,#banner li.clearBlock,#content ul li.clearBlock,#footer .container .clearBlock,#footer .social_media_icon li .clearBlock
 {
 	clear:both;
 	float: none;
@@ -95,32 +96,24 @@ body
 {
     	font-size:50px;
     	color:#217543;
-	font-family:Raleway;
-	width:443px;
-	font-weight:normal;
-	/*display:inline;*/
-	
+	font-family:Raleway;	
 }
 #banner .button
 { 
-    	width: 195px;
     	background: #217442;
     	border:2px solid #155225;
-	color: #ffffff;
 	box-shadow:1px 1px 1px 1px #888;
-    	font-weight:bold;
-	font-size:18px;
-	font-family:myriad Pro;
-	border-radius:3px;
-	text-align: center;
-	padding:10px 0px;
-	margin-top:15px;
-	display:block;
-	
+    	border-radius:3px;
 }
 a.button
 {
-    text-decoration: none;
+    	text-decoration: none;
+	color: #ffffff;
+	font-weight:bold;
+	font-size:18px;
+	font-family:myriad Pro;
+	padding:8px 40px;
+	
 }
 
 #banner .container
@@ -129,15 +122,12 @@ a.button
 }
 #banner .bannerWrapper
 {
-	position:absolute;
-	top:135px;
-	left:37px;
+	width:443px;
+	float:left;
+	margin-top:135px;
+	margin-left:36px;
 }
-/*#bannerDown
-{
-	margin-bottom:26px;
-	border-bottom:1px solid #cccccc;
-}*/
+
 #banner ul
 {
 	list-style-type: none;
@@ -155,12 +145,12 @@ a.button
 .box
 {
 	width:414px;
-	height:168px;
+	height:133px;
 	border:2px solid #cccccc;
 	border-radius:3px;
-	padding:17px 17px 20px 20px;
+	padding:21px 17px 22px 20px;
 }
-.box img
+.box .sideImage
 {
 	float:right;
 }
@@ -175,12 +165,12 @@ a.button
 	font-size:21px;
 	text-transform:uppercase;
 	font-weight:bold;
-	margin-bottom:13px;
+	line-height:31px;
 }     
 #banner p
 {
 	font-size:18px;
-	margin-bottom:7px;
+	line-height:22px;
 }
 .mailBox
 {
@@ -190,14 +180,12 @@ a.button
 }
 .textBar
 {
-	
-	
 	width:140px;
-	line-height:32px;
+	line-height:38px;
 	padding:0px 30px 0px 7px;
 	float:left;
 }
-.signupButton
+input[type="submit"]
 {
 	width: 74px;
 	line-height:36px;
@@ -205,27 +193,27 @@ a.button
 	color: #636363;
     	font-weight:bold;
 	font-size:14px;
-	text-align: center;
-	display:inline-block;
+	display:block;
+	
 }
-.shopsaleItems a
+a.shopsaleItems 
 {
 	color: #ffffff;
 	font-weight:bold;
 	font-size:18px;
-	padding:7px 0px;
+	padding:8px 7px;
 	display:block;
 	text-decoration:none;
+	text-align:center;
 }
 .shopsaleItems 
 {
-	width:244px;
+	width:230px;
     	background: #1e6a3d;
     	border:2px solid #1c5b2e;
 	box-shadow:1px 1px 1px 1px #888;
     	border-radius:3px;
-	text-align: center;
-	margin-top:13px;
+	margin-top:23px;
 	
 }	
 
@@ -233,17 +221,18 @@ a.button
 {
     	text-decoration: none;
 }
-#content
+#content 
 {
 	background-repeat:repeat;
 	background-image: url("../images/pattern.jpg");
 	border-bottom:1px solid #cccccc;
+	padding:92px 26px;
 	
 }
 #content ul
 {
 	list-style-type: none;
-	padding:92px 26px;
+	
 	
 	
 }
@@ -262,8 +251,8 @@ a.button
 #content .contentDown
 {
 	width:271px;
-	font-size:12px;
-	line-height:26px;
+	font-size:13px;
+	line-height:20px;
 }
 #content .contentDown p
 {
@@ -328,15 +317,15 @@ a.button
 .social_media_option li
 {
 	
-	float: right;
-	border-radius: 12px;
+	float: left;
+	border-radius: 7px;
 	background-color:#1f6e3f;
-	margin-right:10px;
+	margin-left:10px;
 	
 }
 .social_media_option li:first-child
 {
-	margin-right:0px;
+	margin-left:0px;
 }
 .social_media_option li:hover{
 	background-color:#D2691E;
