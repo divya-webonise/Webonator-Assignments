@@ -30,6 +30,7 @@ body
 {
 	background-color:#ffffff;
 	padding:25px 0px 10px 0px;
+	box-shadow:1px 2px 5px 0px #d9d9d9;
 }
 
 .logo
@@ -224,6 +225,7 @@ a.button
 	box-shadow:1px 1px 1px 1px #888;
     	border-radius:3px;
 	text-align: center;
+	margin-top:13px;
 	
 }	
 
