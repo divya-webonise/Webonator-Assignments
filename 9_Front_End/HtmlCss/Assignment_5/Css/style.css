@@ -391,10 +391,6 @@ a.button
 {
 	color: #000000;
 }
-#footer .copyRight,.menuList
-{
-	margin-top:15px;
-}
 #footer .menuList li
 {
 	float :left;
@@ -414,6 +410,10 @@ a.button
 	color:#939393;
 	font-size:14px;
 	
+}
+.footerBottom
+{
+	margin-top:15px;
 }
 
 .container
