@@ -29,14 +29,13 @@ body
 #navigation
 {
 	background-color:#ffffff;
-	line-height:55px;
 	font-weight:bold;
+	padding:6px 0px 4px 0px;
 }
 
 .logo
 {
 	float:left;
-	margin:6px 0px 4px 0px;
 	background-image:url("../images/logo.png");
 	width:115px;
 	height:45px;	
@@ -47,7 +46,7 @@ body
 }
 .menu 
 {
-    list-style-type: none;
+    	list-style-type: none;
 	float:left;
 	margin:22px 0px 0px 30px;
 }
@@ -69,7 +68,7 @@ body
      	color:#D2691E; 
 	
 }
-.clearBlock ,#yellowBanner li.clearBlock, #footer .links li.clearBlock
+.clearBlock ,#yellowBanner li.clearBlock, #footer .links li.clearBlock,.menu li.clearBlock,#content ul .clearBlock
 {
 	clear:both;
 	float: none;
@@ -80,7 +79,7 @@ body
 }
 .searchWrapper
 {
-	float:right;
+	float:left;
 	position:relative;
 	
 }
@@ -111,18 +110,12 @@ body
 .social_media_option{
 	float:right;
 	list-style-type: none;
-	margin:16px 0px 16px 20px;
+	margin:14px 0px 5px 20px;
 	
-}
-.social_media_option li a
-{
-	line-height:4px;
-	display:block;
 }
 .social_media_option li
 {
-	width: 24px;
-	height: 24px;
+	
 	float: right;
 	border-radius: 16px;
 	background-color:#000000;
@@ -133,28 +126,38 @@ body
 	background-color:#D2691E;
 }
 
-.google
+
+.social_media_option li a
 {
-background:url("../images/google_icon.png") no-repeat center 5px;
+	display:block;
+	width: 24px;
+	height: 24px;	
 }
-.twitter
+
+.social_media_option li .google
 {
-background:url("../images/twitter_icon.png") no-repeat center 5px;
+	background:url("../images/google_icon.png") no-repeat center 5px;		
 }
-.pinterest
+.social_media_option li .twitter
 {
-background:url("../images/pinterest_icon.png") no-repeat center 5px;
+	background:url("../images/twitter_icon.png") no-repeat center 5px;
 }
-.facebook
+.social_media_option li .pinterest
 {
-background:url("../images/facebook_icon.png") no-repeat center 5px;
+	background:url("../images/pinterest_icon.png") no-repeat center 5px;
 }
+.social_media_option li .facebook
+{
+
+	background:url("../images/facebook_icon.png") no-repeat center 5px;
+}
+
 
 #banner
 {
 	background:#000 url("../images/grand_marriage.png") no-repeat center top;
 	height:545px;
-	position:relative;
+	
 }
 #banner h1    
 {
@@ -182,51 +185,45 @@ background:url("../images/facebook_icon.png") no-repeat center 5px;
 {
 	background-color:#ecab1f;
 	margin-bottom:65px;
-		
+	padding-top:19px;
+	padding-bottom:20px;	
 }
 #yellowBanner ul
 {
 	list-style-type: none;
-	float:right;
+
 }
 #yellowBanner li
 {
-		
-
-	width:220px;
-	border: 1px ;
+	width:192px;
 	border-radius:9px;		
-	line-height:60px;
-	margin-top:19px;
-	margin-right:20px;
-	margin-bottom:20px;
-	float:right;
+	padding:14px 9px 14px 19px;
+	margin-left:20px;
+	float:left;
 	background-color:#ffffff;
-	position:relative;
 }
 
 #yellowBanner li a
 {
 	text-decoration:none;
-	padding-left:21px;
+	display:block;
 	color:#000000;
-	font-size:25px;
+	font-size:22px;
 	
 	
 }
 #yellowBanner li:first-child
 {
-	margin-right:0px;
+	margin-left:0px;
 }
 .arrow
 {
 	float:right;
 	background-image:url("../images/arrow.png");
-	width:25px;
-	height:25px;	
-  	position:absolute;
-	top:13px;
-	right:16px;
+	background-repeat:no-repeat;
+	width:27px;
+	height:27px;	
+  	
 }
 
 #content h2
@@ -271,15 +268,17 @@ background:url("../images/facebook_icon.png") no-repeat center 5px;
 	font-size:13px;
 	margin-top:21px;
 	color:#ffffff;
+	
 }
 #content h3
 {
 	line-height:16px;
 	font-size:15px;
-	padding-top:11px;
-	padding-bottom:17px;
 	color:#ffffff;
 	font-weight:bold;
+	margin-top:21px;
+	margin-bottom:10px;
+	
 }
 #content p
 {
@@ -349,9 +348,7 @@ background:url("../images/facebook_icon.png") no-repeat center 5px;
 {
 	list-style-type: none;
 	width:700px;
-	margin:auto;
-	
-
+	margin: 18px auto 10px auto;
 }
 
 .links li
@@ -359,11 +356,12 @@ background:url("../images/facebook_icon.png") no-repeat center 5px;
 	float:left;
 	border-left:1px solid #b2b2b2;
 	padding:0px 8px 0px 8px;
-	margin:18px 5px 10px 5px;	
+		
 }
 .links ul li:first-child
  {
-    border-left:none;
+    border:none;
+	
  }
 
 .links li a
