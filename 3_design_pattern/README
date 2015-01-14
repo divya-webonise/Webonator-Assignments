@@ -1,0 +1,49 @@
+# videoconverter
+## Simple Gem For Video Processing
+
+## Compatibility:
+
+## Ruby:
+Tested with ruby 2.0
+
+## streamio-ffmpeg:
+ The current gem is tested against streamio-ffmpeg 1.0.0.
+
+## Require the gem
+```
+ require 'rubygems'
+ require 'videoconverter'
+```
+## Usage :
+```
+options =  {
+            "source_url" => 'http://www.xyz.com/video.mp4',
+            "actions" => {
+                          "resolution" => "320x240",
+                          "video_bitrate" => 92,
+                          "thumbnail" => 10,
+                          "split" => 3,
+                          "cut" => "00:00:10-00:01:10"
+                         },
+            "dir" => "/home/videos/"
+           }
+
+VideoConverter.process(options)
+```
+## Splitting videos in equal parts
+```
+"actions" => {
+              "split" => 3
+             }
+```
+The value is number of equal parts
+
+## Thumbnail of video
+```
+"actions" => {
+              "thumbnail" => 10
+             }
+```
+the value is provided in seconds
+
+
