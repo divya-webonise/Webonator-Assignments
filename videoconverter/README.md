@@ -18,8 +18,8 @@ ffmpeg:(1.2.1)
 streamio-ffmpeg:
 The current gem is tested against streamio-ffmpeg 1.0.0.
 
-Dependencies required in order to use Gem
----------------------------------------------
+Dependencies 
+------------
 
 FFmpeg library:
 FFmpeg is a command-line tool that converts audio or video formats.  It includes libavcodec, the open source codec library.
@@ -32,7 +32,15 @@ streamio-ffmpeg is a wrapper that make use of ffmpeg commands. The functionaliti
 supported formats
 -----------------
 
-.avi,.mp4,.mkv,.wav,.mov,.m4a
+|Extension |
+|----------|
+|.avi      | 
+|.mp4      |  
+|.wav      | 
+|.mov      |  
+|.m4a      | 
+|.mkv      | 
+|.ogg      |
 
 Usage
 -----
@@ -42,8 +50,9 @@ Usage
 ``` ruby
 require 'rubygems'
 require 'videoconverter'
+```
 * Example
-
+``` ruby
 request = {"source_url": "http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4",
   "actions": 
   {
